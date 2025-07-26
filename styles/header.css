@@ -1,0 +1,25 @@
+#primary{
+  padding-block: 20px;/*block significa que está pegando o eixo vertical, apenas em cima e em paixo.*/
+
+  div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /*nesting css*/
+  div:nth-child(2){ /*Pega a segunda div dentro da area do id primary*/
+    margin-inline: auto; /*inline significa que vai pegar esquerda e direita(eixo horizontal), e a margin inline automatizou a logo do tech news*/ 
+  }
+  
+  div:nth-child(3){
+    justify-self: end;
+  }
+}
+
+#secondary{
+  padding-block: 14px;
+  border: solid 1px var(--stroke-color);
+  border-inline: none; /*remove das laterais*/
+  justify-content: space-between;
+}
