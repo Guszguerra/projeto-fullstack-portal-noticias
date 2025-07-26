@@ -1,0 +1,16 @@
+/*utility-first(quando pega essa classe ela vai fazer apenas uma coisa, por exemplo a de grid vai apenas transformar em grid)*/
+.grid{
+  display: grid;
+}
+
+.grid-flow-col{
+  grid-auto-flow: column; /*muda o flow automatico*/
+}
+
+.grid-cols-2{
+  grid-template-columns: 1fr 1fr;
+}
+
+.gap-16{
+  gap: 16px;
+}
